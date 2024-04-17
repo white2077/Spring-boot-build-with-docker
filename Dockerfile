@@ -17,9 +17,12 @@ EXPOSE 8080
 #sau đó chạy lệnh docker build -t api-image-sample . để build image
 #sau đó chạy lệnh docker ps để kiểm tra container đang chạy
 #nếu container đang chạy thì chạy lệnh docker stop api-container để dừng container
-#sau đó chạy lệnh docker run -it -p 8080:8080 --name=api-container api-image-sample để chạy container
-#xuất file tar bằng lệnh docker save -o api-image-sample.tar api-image-sample
-#load file tar bằng lệnh docker load -i api-image-sample.tar
-#chay container bằng lệnh docker run -it -p 8080:8080 --name=api-container api-image-sample
+#sau đó chạy lệnh docker run -it -p 8080:8080 --name=[tên container] [image name]để chạy container
 
-#Xóa image bằng lệnh docker rmi api-image-sample
+#xuất file tar bằng lệnh docker save -o [File name].tar [Image name]
+#load file tar bằng lệnh docker load -i [File name].tar
+
+#chay container bằng lệnh docker run -it -p 8080:8080 --name=[tên container] [image name]
+
+#Xóa image bằng lệnh docker rmi [image name]
+#Xóa container bằng lệnh docker rm [container name]
